@@ -73,15 +73,16 @@ Overview todo
 
 ### Links and Resources
 
-Todo
+- [Bazel-Android-Starter](https://github.com/scalio/Bazel-Android-Sample) - A Bazel & Android starter project running latest Kotlin with coroutines support, and also Android Databinding.
+- [Kotlin Build Rules](https://github.com/mig35/rules_kotlin) - our updated Kotlin build rules with full support for Kotlin 1.3, Coroutines, and Annotations.
 
 ## 🔴 iOS
 
-Overview todo
+Our iOS support is in canary phase as we continue to work on tooling around package managers (SPM, CocoaPods) etc.
 
 ### Links and Resources
 
-Todo
+[PodToBuild by Pinterest](https://github.com/pinterest/PodToBUILD) - A promising and useful tool for making use of CocoaPods within Bazel builds, however there's still room for improvement here, and SPM should be preferred wherever possible.
 
 ## 💛 C++
 
