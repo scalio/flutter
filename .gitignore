@@ -3,6 +3,9 @@
 .AppleDouble
 .LSOverride
 
+# JetBrains IDE
+.idea/
+
 # Icon must end with two \r
 Icon
 
