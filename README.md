@@ -39,6 +39,10 @@ In practice, the Bazel rollout is tracked using Kanban and the above workflow, w
 
 All Golang applications are built with Bazel.
 
+### Issues
+
+- [Missing $GOPATH with pure="on" enabled](https://github.com/bazelbuild/rules_go/issues/1987)
+
 ### Links and Resources
 
 Todo
@@ -47,9 +51,13 @@ Todo
 
 New NestJS apps are built with Bazel, and the team is being onboarded rapidly.
 
+### Issues
+
+- [Building linux amd64 nodejs_image on Mac OS](https://github.com/bazelbuild/rules_nodejs/issues/396) | [related pull request](https://github.com/bazelbuild/rules_nodejs/pull/827)
+
 ### Links and Resources
 
-Todo
+- [NestJS starter repo](https://github.com/scalio/bazel-nestjs-starter)
 
 ## 🔴 Angular 8
 
@@ -108,7 +116,7 @@ Overview todo
 
 ### Links and Resources
 
-Todo
+- [.NET Core starter repo](https://github.com/scalio/bazel-dotnetcore-starter)
 
 ## 🔴 JVM
 
