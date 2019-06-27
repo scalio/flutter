@@ -81,7 +81,8 @@ Overview todo
 
 ### Links and Resources
 
-- [Bazel-Android-Starter](https://github.com/scalio/Bazel-Android-Sample) - A Bazel & Android starter project running latest Kotlin with coroutines support, and also Android Databinding.
+- [Bazel-Android-Starter-Kotlin](https://github.com/scalio/Android-Bazel-Starter-Kotlin) - A Bazel & Android starter project running latest Kotlin (1.3.+) with coroutines support.
+- [Bazel-Android-Starter-Java](https://github.com/scalio/Android-Bazel-Starter-Java) - A Bazel & Android starter project running Java.
 - [Kotlin Build Rules](https://github.com/mig35/rules_kotlin) - our updated Kotlin build rules with full support for Kotlin 1.3, Coroutines, and Annotations.
 
 ## 🔴 iOS
