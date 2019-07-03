@@ -79,7 +79,7 @@ Todo
 
 ## 💛 Android
 
-Overview todo
+We've implemented Kotlin 1.3 support by custom rules. But we are blocked on [Android DataBinding support](https://github.com/bazelbuild/bazel/issues/2694).
 
 ### Links and Resources
 
