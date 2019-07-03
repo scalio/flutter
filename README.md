@@ -39,7 +39,7 @@ In practice, the Bazel rollout is tracked using Kanban and the above workflow, w
 
 ## 💚 Golang
 
-All Golang applications are built with Bazel.
+All Golang applications are built with Bazel and the platform teams are fully onboarded and up to speed on our best practices.
 
 ### Issues
 
@@ -47,7 +47,7 @@ All Golang applications are built with Bazel.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Golang + Bazel will be publicly listed here soon.
 
 ## 💚 NodeJS (Nest)
 
@@ -67,7 +67,7 @@ Angular builds on Bazel are being evaluated and the tooling implemented.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Angular + Bazel will be publicly listed here soon.
 
 ## 💚 Docker
 
@@ -75,7 +75,7 @@ Docker and Bazel support is in use for all Golang apps and some NestJS apps. Rol
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Docker + Bazel will be publicly listed here soon.
 
 ## 💛 Android
 
@@ -97,25 +97,27 @@ Our iOS support is in canary phase as we continue to work on tooling around pack
 
 ## 💚 C++
 
+Bazel is used for all new C++ projects, all meaningful legacy projects have been updated, and the team is onboarded.
+
 ### 💛 Djinni
 
-Overview todo
+Early Bazel support has been achieved and we are now refining this tooling and moving towards production-ready status.
 
 #### Links and Resources
 
-Todo
+Scalio's contributions to C++ & Djinni + Bazel will be publicly listed here soon.
 
 ## 🔴 Rust
 
-Overview todo
+Overview coming soon.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Rust + Bazel will be publicly listed here soon.
 
 ## 💛 .NET Core
 
-Overview todo
+Scalio's .NET Core team is happy with the results we've seen with Bazel so far and full production-ready Bazel support is coming soon.
 
 ### Links and Resources
 
@@ -123,8 +125,8 @@ Overview todo
 
 ## 🔴 JVM
 
-Overview todo
+The JVM team is currently ramping up on Bazel.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to JVM + Bazel will be publicly listed here soon.
