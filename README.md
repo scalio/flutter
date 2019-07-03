@@ -33,7 +33,10 @@ The workflow consists of 3 stages, each of which consists of a few steps. The st
 
 In practice, the Bazel rollout is tracked using Kanban and the above workflow, where each platform is a task, each item above is a checklist item, and each Status is a column.
 
-![Kanban Example](assets/kanban.jpg)
+![Kanban Example](assets/kanban.png)
+
+[Bazel rollout Kanban here](https://github.com/scalio/bazel-status/projects/1)
+
 
 # Bazel Support Status at Scalio
 
@@ -98,6 +101,7 @@ Now we are working on possible best practices for iOS development process with B
 ### Links and Resources
 
 [PodToBuild by Pinterest](https://github.com/pinterest/PodToBUILD) - A promising and useful tool for making use of CocoaPods within Bazel builds, however there's still room for improvement here, and SPM should be preferred wherever possible.
+
 [XCHammer by Pinterest](https://github.com/pinterest/xchammer) - XCHammer generates Xcode projects from a Bazel Workspace.
 
 ## 💚 C++
@@ -119,7 +123,7 @@ And we have very positive experience with Djinni - cross-language type declarati
 
 Bazel has proven support of all Djinni oriented platforms, so we want to consider creation of Bazel build rules for Djinni interface definition files.
 
-While we intially met certain limitations, now we got it workaround and have working proof of concept build rules with the power of Bazel's  [repository_rules](https://docs.bazel.build/versions/master/skylark/repository_rules.html)
+While we intially met certain limitations, now we got it workaround and have working proof of concept build rules with the power of Bazel's  [repository_rules](https://docs.bazel.build/versions/master/skylark/repository_rules.html).
 
 #### Links and Resources
 
