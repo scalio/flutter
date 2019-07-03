@@ -25,6 +25,8 @@ The workflow consists of 3 stages, each of which consists of a few steps. The st
   - finalize best practices and knowledgebase
   - platform team fully onboarded
   - PRs to Bazel OSS repos with necessary changes to the tool itself, build rules, and docs
+  - implement remote cache integration
+  - implement test rbe integration
 - 💚 **Stable** - _builds with Bazel are fully supported and the norm for the platform_
   - 100% of projects building on Bazel
   - all current use cases supported
