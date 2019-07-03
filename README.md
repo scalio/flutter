@@ -91,25 +91,47 @@ We've implemented Kotlin 1.3 support by custom rules. But we are blocked on [And
 
 Our iOS support is in canary phase as we continue to work on tooling around package managers (SPM, CocoaPods) etc.
 
+While we got some samples sucessfully built with Bazel, we still met some pitfalls, which we need to workaround first to start ours projects migration to Bazel.
+
+Now we are working on possible best practices for iOS development process with Bazel and formalizing our contribution suggestions.
+
 ### Links and Resources
 
 [PodToBuild by Pinterest](https://github.com/pinterest/PodToBUILD) - A promising and useful tool for making use of CocoaPods within Bazel builds, however there's still room for improvement here, and SPM should be preferred wherever possible.
+[XCHammer by Pinterest](https://github.com/pinterest/xchammer) - XCHammer generates Xcode projects from a Bazel Workspace.
 
 ## 💚 C++
 
 Bazel is used for all new C++ projects, all meaningful legacy projects have been updated, and the team is onboarded.
 
+C++ has great out of the box support in Bazel. 
+We use C/C++ to share code between mobile platforms and command line tools. Bazel c++ rules crosscompilation was sucessfully tested to be integrated with JVM, Ios, MacOS X (swift) and Android platforms rules.
+
+Previously we used Buck build system, but found no drawbacks while migration to Bazel and now can consider it as main build system for C/C++ code.
+
+Also, we have few suggestions about cmake projects generation from Bazle rules and now working to formalize it.
+
 ### 💛 Djinni
 
-Early Bazel support has been achieved and we are now refining this tooling and moving towards production-ready status.
+As we use C/C++ libraries for cross platform development, we need good tooling for faster cross language communication prototyping.
+
+And we have very positive experience with Djinni - cross-language type declarations and interface bindings code generation tool.
+
+Bazel has proven support of all Djinni oriented platforms, so we want to consider creation of Bazel build rules for Djinni interface definition files.
+
+While we intially met certain limitations, now we got it workaround and have working proof of concept build rules with the power of Bazel's  [repository_rules](https://docs.bazel.build/versions/master/skylark/repository_rules.html)
 
 #### Links and Resources
+
+[Djinni by dropbox](https://github.com/dropbox/djinni) - Djinni is a tool for generating cross-language type declarations and interface bindings
 
 Scalio's contributions to C++ & Djinni + Bazel will be publicly listed here soon.
 
 ## 🔴 Rust
 
-Overview coming soon.
+We got Rust Bazel rules tested with some sample projects, but we met problems with Cargo integration, which we need to resolve first to consider Bazel as main build system for ours Rust utilities.
+
+More detailed problems descriptions and contribution suggestions are coming.
 
 ### Links and Resources
 
@@ -123,9 +145,11 @@ Scalio's .NET Core team is happy with the results we've seen with Bazel so far a
 
 - [.NET Core starter repo](https://github.com/scalio/bazel-dotnetcore-starter)
 
-## 🔴 JVM
+## 💛 JVM
 
-The JVM team is currently ramping up on Bazel.
+Java rules are supported out of the box in Bazel and solid Scala/Kotlin rules are also present there.
+
+We got sample Java/Scala/Kotlin projects built with Bazel and now going to evaluate Bazel conformance for big JVM-based frameworks (like Spring, Spartk, etc.)
 
 ### Links and Resources
 
