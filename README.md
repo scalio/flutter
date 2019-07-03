@@ -94,7 +94,7 @@ We've implemented Kotlin 1.3 support by custom rules. But we are blocked on [And
 
 Our iOS support is in canary phase as we continue to work on tooling around package managers (SPM, CocoaPods) etc.
 
-While we got some samples sucessfully built with Bazel, we still met some pitfalls, which we need to workaround first to start ours projects migration to Bazel.
+While we got some samples successfully built with Bazel, we still met some pitfalls, which we need to workaround first to start ours projects migration to Bazel.
 
 Now we are working on possible best practices for iOS development process with Bazel and formalizing our contribution suggestions.
 
@@ -109,9 +109,10 @@ Now we are working on possible best practices for iOS development process with B
 Bazel is used for all new C++ projects, all meaningful legacy projects have been updated, and the team is onboarded.
 
 C++ has great out of the box support in Bazel. 
-We use C/C++ to share code between mobile platforms and command line tools. Bazel c++ rules crosscompilation was sucessfully tested to be integrated with JVM, Ios, MacOS X (swift) and Android platforms rules.
 
-Previously we used Buck build system, but found no drawbacks while migration to Bazel and now can consider it as main build system for C/C++ code.
+Mostly, we use C/C++ to share code between mobile platforms and command line tools. So, currently, Bazel c++ rules cross compilation was successfully tested to be integrated with JVM, iOS, MacOS X (swift) and Android platforms rules.
+
+Previously we tried Buck build system, but found no drawbacks while migration to Bazel and now can consider it as main build system for C/C++ code.
 
 Also, we have few suggestions about cmake projects generation from Bazle rules and now working to formalize it.
 
@@ -123,7 +124,7 @@ And we have very positive experience with Djinni - cross-language type declarati
 
 Bazel has proven support of all Djinni oriented platforms, so we want to consider creation of Bazel build rules for Djinni interface definition files.
 
-While we intially met certain limitations, now we got it workaround and have working proof of concept build rules with the power of Bazel's  [repository_rules](https://docs.bazel.build/versions/master/skylark/repository_rules.html).
+While we initially met certain limitations, now we got it workaround and have working proof of concept build rules with the power of Bazel's  [repository_rules](https://docs.bazel.build/versions/master/skylark/repository_rules.html).
 
 #### Links and Resources
 
