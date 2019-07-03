@@ -49,7 +49,7 @@ All Golang applications are built with Bazel.
 
 Todo
 
-## 💛 NodeJS (Nest)
+## 💚 NodeJS (Nest)
 
 New NestJS apps are built with Bazel, and the team is being onboarded rapidly.
 
@@ -61,7 +61,7 @@ New NestJS apps are built with Bazel, and the team is being onboarded rapidly.
 
 - [NestJS starter repo](https://github.com/scalio/bazel-nestjs-starter)
 
-## 🔴 Angular 8
+## 💛 Angular 8
 
 Angular builds on Bazel are being evaluated and the tooling implemented.
 
@@ -69,7 +69,7 @@ Angular builds on Bazel are being evaluated and the tooling implemented.
 
 Todo
 
-## 💛 Docker
+## 💚 Docker
 
 Docker and Bazel support is in use for all Golang apps and some NestJS apps. Rollout is ongoing to legacy applications.
 
@@ -95,7 +95,7 @@ Our iOS support is in canary phase as we continue to work on tooling around pack
 
 [PodToBuild by Pinterest](https://github.com/pinterest/PodToBUILD) - A promising and useful tool for making use of CocoaPods within Bazel builds, however there's still room for improvement here, and SPM should be preferred wherever possible.
 
-## 💛 C++
+## 💚 C++
 
 ### 💛 Djinni
 
@@ -105,7 +105,7 @@ Overview todo
 
 Todo
 
-## 💛 Rust
+## 🔴 Rust
 
 Overview todo
 
@@ -113,7 +113,7 @@ Overview todo
 
 Todo
 
-## 🔴 .NET Core
+## 💛 .NET Core
 
 Overview todo
 
