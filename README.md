@@ -25,6 +25,8 @@ The workflow consists of 3 stages, each of which consists of a few steps. The st
   - finalize best practices and knowledgebase
   - platform team fully onboarded
   - PRs to Bazel OSS repos with necessary changes to the tool itself, build rules, and docs
+  - implement remote cache integration
+  - implement rbe integration
 - 💚 **Stable** - _builds with Bazel are fully supported and the norm for the platform_
   - 100% of projects building on Bazel
   - all current use cases supported
@@ -37,7 +39,7 @@ In practice, the Bazel rollout is tracked using Kanban and the above workflow, w
 
 ## 💚 Golang
 
-All Golang applications are built with Bazel.
+All Golang applications are built with Bazel and the platform teams are fully onboarded and up to speed on our best practices.
 
 ### Issues
 
@@ -45,9 +47,9 @@ All Golang applications are built with Bazel.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Golang + Bazel will be publicly listed here soon.
 
-## 💛 NodeJS (Nest)
+## 💚 NodeJS (Nest)
 
 New NestJS apps are built with Bazel, and the team is being onboarded rapidly.
 
@@ -59,21 +61,21 @@ New NestJS apps are built with Bazel, and the team is being onboarded rapidly.
 
 - [NestJS starter repo](https://github.com/scalio/bazel-nestjs-starter)
 
-## 🔴 Angular 8
+## 💛 Angular 8
 
 Angular builds on Bazel are being evaluated and the tooling implemented.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Angular + Bazel will be publicly listed here soon.
 
-## 💛 Docker
+## 💚 Docker
 
 Docker and Bazel support is in use for all Golang apps and some NestJS apps. Rollout is ongoing to legacy applications.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Docker + Bazel will be publicly listed here soon.
 
 ## 💛 Android
 
@@ -93,27 +95,29 @@ Our iOS support is in canary phase as we continue to work on tooling around pack
 
 [PodToBuild by Pinterest](https://github.com/pinterest/PodToBUILD) - A promising and useful tool for making use of CocoaPods within Bazel builds, however there's still room for improvement here, and SPM should be preferred wherever possible.
 
-## 💛 C++
+## 💚 C++
+
+Bazel is used for all new C++ projects, all meaningful legacy projects have been updated, and the team is onboarded.
 
 ### 💛 Djinni
 
-Overview todo
+Early Bazel support has been achieved and we are now refining this tooling and moving towards production-ready status.
 
 #### Links and Resources
 
-Todo
+Scalio's contributions to C++ & Djinni + Bazel will be publicly listed here soon.
 
-## 💛 Rust
+## 🔴 Rust
 
-Overview todo
+Overview coming soon.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to Rust + Bazel will be publicly listed here soon.
 
-## 🔴 .NET Core
+## 💛 .NET Core
 
-Overview todo
+Scalio's .NET Core team is happy with the results we've seen with Bazel so far and full production-ready Bazel support is coming soon.
 
 ### Links and Resources
 
@@ -121,8 +125,8 @@ Overview todo
 
 ## 🔴 JVM
 
-Overview todo
+The JVM team is currently ramping up on Bazel.
 
 ### Links and Resources
 
-Todo
+Scalio's contributions to JVM + Bazel will be publicly listed here soon.
