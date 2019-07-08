@@ -79,7 +79,11 @@ Scalio's contributions to Docker + Bazel will be publicly listed here soon.
 
 ## 💛 Android
 
-We've implemented Kotlin 1.3 support by custom rules. But we are blocked on [Android DataBinding support](https://github.com/bazelbuild/bazel/issues/2694).
+Some Android apps are built with Bazel using a custom build rule which implements support for Kotlin 1.3, but the issues below are blockin us from fully adopting Bazel for Android.
+
+### Issues
+
+[Android DataBinding support](https://github.com/bazelbuild/bazel/issues/2694) is a critical feature for us, used in the majority of our applciations to achieve clean MVVM architecture in line with best practices. The lack of databinding support is very problematic.
 
 ### Links and Resources
 
