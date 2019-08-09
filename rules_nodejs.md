@@ -2,6 +2,25 @@
 
 Recipes, unexpected pitfalls and other non-trivial gotchas for [rules_nodejs](https://github.com/bazelbuild/rules_nodejs/)
 
+# Test suites support in context of Bazel
+
+## Unit tests (TDD, BDD)
+
++ karma — [fully supported](https://www.npmjs.com/package/@bazel/karma), headless and watch mode [are available](https://bazelbuild.github.io/rules_nodejs/Karma.html).
+    
++ jasmine — [fully supported](https://bazelbuild.github.io/rules_nodejs/Jasmine.html).
+
+- jest — not supported in `rules_nodejs`. Possible solutions:
+
+  1. https://github.com/ecosia/bazel_rules_nodejs_contrib/tree/master/examples/jest_node_test
+
+
+## e2e tests
+
++ protractor — [fully supported](https://bazelbuild.github.io/rules_nodejs/Protractor.html).
+
+- cypress — [not supported](https://github.com/bazelbuild/rules_nodejs/issues/607), could be used with workarounds possibly.
+
 
 
 # Docker
