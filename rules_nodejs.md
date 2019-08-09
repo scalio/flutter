@@ -6,10 +6,16 @@ Recipes, unexpected pitfalls and other non-trivial gotchas for [rules_nodejs](ht
 
 # Docker
 
+### Issue with layers order
+
+`nodejs_image` is [messing up docker layers](https://github.com/bazelbuild/rules_nodejs/pull/863) for node_modules.
+
+Partially resolved [here](https://github.com/bazelbuild/rules_docker/pull/1000) in context of `rules_docker` (not in context of `rules_nodejs` yet).
+
 
 ### Debian 9 vs distroless
 
-nodejs_image in [rules_docker](https://github.com/bazelbuild/rules_docker) is based on [debian9 base image](https://github.com/bazelbuild/rules_docker/blob/b361f3b7982ad3633daa0a4ad2cb44890c74177b/nodejs/image.bzl#L51):
+`nodejs_image` in [rules_docker](https://github.com/bazelbuild/rules_docker) is based on [debian9 base image](https://github.com/bazelbuild/rules_docker/blob/b361f3b7982ad3633daa0a4ad2cb44890c74177b/nodejs/image.bzl#L51):
 
 Cloud Security Scanner for GKE [is reporting](https://github.com/bazelbuild/rules_docker/issues/1068) some security issues for it.
 
@@ -19,11 +25,12 @@ Reasons to [use debian-based instead of distroless](https://github.com/bazelbuil
 
 - nodejs_binary runfiles includes the node binary, so there is no need of nodejs runtime in the base layer.
 
-- generated nodejs_binary entrypoint is currently a bash script wrapping node with some additional logic, so base runtime is needed to run this logic 
+- generated `nodejs_binary` entrypoint is currently a bash script wrapping node with some additional logic, so base runtime is needed to run this logic 
 
 Possible workarounds:
 
 Switch base image to something else?
+
 
 ### Issue with PORT env
 
