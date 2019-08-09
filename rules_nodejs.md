@@ -1,0 +1,51 @@
+# rules_nodejs cookbook 
+
+Recipes, unexpected pitfalls and other non-trivial gotchas for [rules_nodejs](https://github.com/bazelbuild/rules_nodejs/)
+
+
+
+# Docker
+
+
+### Debian 9 vs distroless
+
+nodejs_image in [rules_docker](https://github.com/bazelbuild/rules_docker) is based on [debian9 base image](https://github.com/bazelbuild/rules_docker/blob/b361f3b7982ad3633daa0a4ad2cb44890c74177b/nodejs/image.bzl#L51):
+
+Cloud Security Scanner for GKE [is reporting](https://github.com/bazelbuild/rules_docker/issues/1068) some security issues for it.
+
+All of them are tolerable for production environment at the moment.
+
+Reasons to [use debian-based instead of distroless](https://github.com/bazelbuild/rules_docker/pull/254):
+
+- nodejs_binary runfiles includes the node binary, so there is no need of nodejs runtime in the base layer.
+
+- generated nodejs_binary entrypoint is currently a bash script wrapping node with some additional logic, so base runtime is needed to run this logic 
+
+Possible workarounds:
+
+Switch base image to something else?
+
+### Issue with PORT env
+
+If app is using PORT env variable, make sure to define it within container_image or default `8080` [will be used instead](https://github.com/GoogleContainerTools/base-images-docker/blob/6e6fdf4ac44ca1cf8f3dfd6fd91f9fc0dae5ffbb/debian9/BUILD#L71).
+
+Possible workarounds:
+
+```python
+load("@io_bazel_rules_docker//container:container.bzl", "container_image")
+container_image(
+    name = "modified_base_image",
+    base = "@nodejs_image_base//image",
+    env = {
+        "PORT": "3000",
+    },
+)
+nodejs_image(
+    name = "docker",
+    base = ":modified_base_image",
+    entry_point = ":main.ts",
+    node_modules = "@npm//:node_modules",
+    data = [":app"],
+)
+```
+
