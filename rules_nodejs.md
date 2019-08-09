@@ -34,6 +34,19 @@ Possible workarounds:
 
 - Switch to Node 10 (e.g. do not configure `node_repositories` or configure it to use node 10). 10 works fine with Bazel.
 
+### Yarn workspaces compatibility
+
+Currently Yarn workspaces are not compatible with Bazel:
+
+- https://github.com/bazelbuild/rules_nodejs/issues/266
+
+- https://github.com/bazelbuild/rules_nodejs/issues/871#issuecomment-502725072
+
+Possible workarounds:
+
+Use NX-based monorepo or other approach instead.
+
+
 # Docker
 
 ### Cross-platform builds (targeting linux on Mac OS or Windows)
