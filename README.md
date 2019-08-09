@@ -56,11 +56,9 @@ Scalio's contributions to Golang + Bazel will be publicly listed here soon.
 
 New NestJS apps are built with Bazel, and the team is being onboarded rapidly.
 
-### Issues
-
-- [Building linux amd64 nodejs_image on Mac OS](https://github.com/bazelbuild/rules_nodejs/issues/396) | [related pull request](https://github.com/bazelbuild/rules_nodejs/pull/827)
-
 ### Links and Resources
+
+- [Issues and recipes](rules_nodejs.md)
 
 - [NestJS starter repo](https://github.com/scalio/bazel-nestjs-starter)
 
@@ -75,6 +73,10 @@ Scalio's contributions to Angular + Bazel will be publicly listed here soon.
 ## 💚 Docker
 
 Docker and Bazel support is in use for all Golang apps and some NestJS apps. Rollout is ongoing to legacy applications.
+
+### Issues:
+
+- `rules_docker` is kind of broken for Windows (under WSL too). Build works, run does not: https://github.com/bazelbuild/rules_docker/pull/1021 
 
 ### Links and Resources
 
