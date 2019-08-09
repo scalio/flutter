@@ -22,8 +22,36 @@ Recipes, unexpected pitfalls and other non-trivial gotchas for [rules_nodejs](ht
 - cypress — [not supported](https://github.com/bazelbuild/rules_nodejs/issues/607), could be used with workarounds possibly.
 
 
+# Build and compatibility issues
+
+### Node 11 and 12 with modules relying on node-pre-gyp does not work
+
+Sometimes it works, sometimes fails: [non-consistent issue described here](https://github.com/bazelbuild/rules_nodejs/issues/930) (easy to reproduce though).
+
+Fails only with Bazel build somehow, yarn install under `node:11` or `node:12` docker container works fine.
+
+Possible workarounds:
+
+- Switch to Node 10 (e.g. do not configure `node_repositories` or configure it to use node 10). 10 works fine with Bazel.
 
 # Docker
+
+### Cross-platform builds (targeting linux on Mac OS or Windows)
+
+It is possible to build Node binaries targeting another platform since `rules_nodejs` 0.34.0 — [related PR](https://github.com/bazelbuild/rules_nodejs/pull/827).
+
+But still not possible to cross-compile node_modules (when they require native bindings, like bcrypt, etc.).
+
+Possible workarounds:
+
+- When project contain modules relying on native bindings, build it’s docker images under Bazel docker:
+
+```bash
+docker run -it --rm -v "$PWD":/app -w /app --entrypoint=/bin/bash l.gcr.io/google/bazel:0.28.0
+apt update && apt install -y build-essential
+bazel build //src:docker
+```
+
 
 ### Issue with layers order
 
