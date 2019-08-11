@@ -13,12 +13,13 @@ The workflow consists of 3 stages, each of which consists of a few steps. The st
 
 ## Status Workflow
 
-- 🔴 **Canary** - _proof of concept phase_
+🔴 **Canary** - _proof of concept phase_
   - evaluate existing support for Bazel
   - initial creation of toolchains, build rules drafts
   - initial definition of knowledgebase and internal best practices
   - begin onboarding the platform team "early adopters"
-- 💛 **Development** - _building out full Bazel support_
+  
+💛 **Development** - _building out full Bazel support_
   - refine build rules
   - define boilerplate project workspaces (BUILD files) for projects on this platform
   - build all new projects on this platform with bazel
@@ -28,13 +29,14 @@ The workflow consists of 3 stages, each of which consists of a few steps. The st
   - PRs to Bazel OSS repos with necessary changes to the tool itself, build rules, and docs
   - implement remote cache integration
   - implement rbe integration
-- 💚 **Stable** - _builds with Bazel are fully supported and the norm for the platform_
+  
+💚 **Stable** - _builds with Bazel are fully supported and the norm for the platform_
   - 100% of projects building on Bazel
   - all current use cases supported
 
 In practice, the Bazel rollout is tracked using Kanban and the above workflow, where each platform is a task, each item above is a checklist item, and each Status is a column.
 
-![Kanban Example](assets/kanban.png)
+![Kanban Example](https://raw.githubusercontent.com/scalio/bazel-status/master/assets/kanban.png)
 
 Scalio's live Bazel rollout kanban can be [seen here](https://github.com/scalio/bazel-status/projects/1).
 
