@@ -11,6 +11,8 @@ We execute this process using a standard playbook both internally here on our pr
 
 The workflow consists of 3 stages, each of which consists of a few steps. The stages align to our level of support and adoption of Bazel for a given platform or language.
 
+
+
 ## Status Workflow
 
 🔴 **Canary** - _proof of concept phase_
