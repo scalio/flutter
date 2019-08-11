@@ -1,4 +1,4 @@
-//![Bazel at Scalio](assets/BazelAtScalioCrop.jpg)
+<!--![Bazel at Scalio](assets/BazelAtScalioCrop.jpg)-->
 ![Bazel at Scalio](assets/bazel-at-scalio.svg)
 
 # Overview
