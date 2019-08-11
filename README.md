@@ -1,5 +1,5 @@
 <!--![Bazel at Scalio](assets/BazelAtScalioCrop.jpg)-->
-![Bazel at Scalio](assets/bazel-at-scalio.svg)
+![Bazel at Scalio](https://raw.githubusercontent.com/scalio/bazel-status/master/assets/bazel-at-scalio.svg)
 
 # Overview
 
