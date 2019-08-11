@@ -11,8 +11,7 @@ We execute this process using a standard playbook both internally here on our pr
 
 The workflow consists of 3 stages, each of which consists of a few steps. The stages align to our level of support and adoption of Bazel for a given platform or language.
 
-
-
+&nbsp;
 ## Status Workflow
 
 🔴 **Canary** - _proof of concept phase_
@@ -36,6 +35,7 @@ The workflow consists of 3 stages, each of which consists of a few steps. The st
   - 100% of projects building on Bazel
   - all current use cases supported
 
+&nbsp;
 In practice, the Bazel rollout is tracked using Kanban and the above workflow, where each platform is a task, each item above is a checklist item, and each Status is a column.
 
 ![Kanban Example](https://raw.githubusercontent.com/scalio/bazel-status/master/assets/kanban.png)
