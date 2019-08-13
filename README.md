@@ -38,7 +38,7 @@ The workflow consists of 3 stages, each of which consists of a few steps. The st
 &nbsp;
 In practice, the Bazel rollout is tracked using Kanban and the above workflow, where each platform is a task, each item above is a checklist item, and each Status is a column.
 
-![Kanban Example](https://raw.githubusercontent.com/scalio/bazel-status/master/assets/kanban.png)
+<img width="100%" alt="kanban" src="https://raw.githubusercontent.com/scalio/bazel-status/master/assets/kanban.png">
 
 Scalio's live Bazel rollout kanban can be [seen here](https://github.com/scalio/bazel-status/projects/1).
 
