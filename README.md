@@ -164,3 +164,13 @@ The JVM team has had success building prototype Java/Scala/Kotlin projects with 
 ### Links and Resources
 
 Scalio's contributions to JVM + Bazel will be publicly listed here soon.
+
+
+## About us
+<p align="center">
+    <br/>
+    <a href="https://scal.io/">
+        <img src="https://raw.githubusercontent.com/scalio/bazel-status/master/assets/scalio-logo.svg?sanitize=true" />
+    </a>
+    <br/>
+</p>
