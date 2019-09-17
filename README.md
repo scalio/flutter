@@ -3,7 +3,13 @@
 
 # Overview
 
-At Scalio, a primary goal for 2019 is to move 100% of our application builds over to Bazel - every language & platform. This work has already begun for many of the platforms we ship code for, and this document tracks the status of this effort here at Scalio, as well as serves as an example of our typical strategy when moving organizations over to Bazel.
+Scalio is a full service product development studio that designs, architects and scales digital solutions for phones, tablets, AR, wearables, connected devices, & emerging technologies. Rooted in San Francisco, we've worked at and for Silicon Valley's top companies, helping to create and evangelize bleeding edge technologies. We're a team of engineers and artists who've developed systems, services, applications and platforms -- scaled for and used daily by millions of people. 
+
+Internally, our 2019 company goal is to move 100% of our application builds over to Bazel - every language & platform, for all clients. This work has already begun for many of the platforms we ship code for, and this document tracks the status of this effort here at Scalio, as well as serves as an example of our typical strategy when moving organizations over to Bazel.
+
+Externally, our focus is in advancing build/test tooling for all languages and platforms, working with the world's top companies to move their organizations to Bazel. Our goal is in helping these companies to build and test software at scale -- quickly and reliably. Our staged execution strategy here at Scalio tightly aligns to our level of support and adoption of Bazel for a given platform or language.
+
+We also work closely with Google to proliferate the adoption of Bazel, for bringing digital transformation and this advanced build pipeline tooling to enterprise customers.
 
 # Playbook
 
