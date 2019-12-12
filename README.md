@@ -9,6 +9,12 @@ Scalio is a global digital product agency advancing technology for the world's l
 
 - [Scalio-Flutter Navigation Saver](https://github.com/scalio/flutter_navigation_saver)
 
+Flutter Packages:
+- [Flutter navigation saver library (core module)](https://pub.dev/packages/navigation_saver)
+- [Flutter navigation saver library (shared preferences module)](https://pub.dev/packages/shared_pref_navigation_saver)
+- [Flutter navigation saver library (built value module)](https://pub.dev/packages/build_value_navigation_saver)
+- [Flutter navigation saver library (json module)](https://pub.dev/packages/json_navigation_saver)
+
 ## About us
 <p align="center">
     <br/>
