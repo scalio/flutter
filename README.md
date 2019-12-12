@@ -5,13 +5,9 @@
 
 Scalio is a full service product development studio that designs, architects and scales digital solutions for phones, tablets, AR, wearables, connected devices, & emerging technologies. Rooted in San Francisco, we've worked at and for Silicon Valley's top companies, helping to create and evangelize bleeding edge technologies. We're a team of engineers and artists who've developed systems, services, applications and platforms -- scaled for and used daily by millions of people. 
 
-# Scalio Bazel Work
+# Scalio Flutter Work
 
-- [Scalio-Bazel Nest Starter](https://scal.io/work/bazel-nestjs)
-- [Scalio-Bazel Nx-Monorepo Starter](https://scal.io/work/bazel-nx-monorepo)
-- [Scalio-Bazel Dotnet-Core Starter](https://scal.io/work/bazel-dotnet-core)
-- [Scalio-Bazel Android-Java Starter](https://scal.io/work/bazel-android-java)
-- [Scalio-Bazel Android-Kotlin Starter](https://scal.io/work/bazel-android-kotlin)
+- [Scalio-Flutter Navigation Saver](https://github.com/scalio/flutter_navigation_saver)
 
 ## About us
 <p align="center">
