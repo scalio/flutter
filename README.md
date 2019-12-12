@@ -1,5 +1,5 @@
 <!--![Flutter at Scalio](assets/BazelAtScalioCrop.jpg)-->
-![Flutter at Scalio](assets/flutter-at-scalio.svg?sanitize=true)
+![Flutter at Scalio](https://raw.githubusercontent.com/scalio/flutter/master/assets/flutter-at-scalio.svg?sanitize=true)
 
 # Scalio Overview
 
