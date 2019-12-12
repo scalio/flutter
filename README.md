@@ -1,5 +1,5 @@
 <!--![Bazel at Scalio](assets/BazelAtScalioCrop.jpg)-->
-![Bazel at Scalio](https://raw.githubusercontent.com/scalio/bazel/master/assets/bazel-at-scalio.svg?sanitize=true)
+![Bazel at Scalio](https://raw.githubusercontent.com/scalio/flutter/master/assets/flutter-at-scalio.svg?sanitize=true)
 
 # Scalio Overview
 
@@ -13,7 +13,7 @@ Scalio is a full service product development studio that designs, architects and
 <p align="center">
     <br/>
     <a href="https://scal.io/">
-        <img src="https://raw.githubusercontent.com/scalio/bazel/master/assets/scalio-logo.svg?sanitize=true" />
+        <img src="https://raw.githubusercontent.com/scalio/flutter/master/assets/scalio-logo.svg?sanitize=true" />
     </a>
     <br/>
 </p>
