@@ -7,7 +7,7 @@
 
 # Scalio Flutter Work
 
-- [Scalio-Flutter Navigation Saver](https://github.com/scalio/flutter_navigation_saver)
+- [Scalio-Flutter Navigation Saver](https://scal.io/work/flutter-navigation-saver)
 
 Flutter Packages:
 - [Flutter navigation saver library (core module)](https://pub.dev/packages/navigation_saver)
